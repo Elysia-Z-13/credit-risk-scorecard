@@ -1,0 +1,30 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# ---- 中间数据（由 pipeline.py 生成，可重建）----
+data/*.parquet
+data/_uci/
+data/_demo*.csv
+
+# 原始数据 data/credit-card-clients.csv 保留入库：
+# 2.8 MB，来源于 UCI 公开数据集，便于他人一键复现
+
+# ---- 编辑器 / 系统 ----
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# ---- pip 临时目录（PyCharm 装依赖时会出现在 src/ 下）----
+src/pip-*
+pip-*
+*.log
+
+# ---- 本地学习用（参考实现、草稿）----
+_reference/
+*.bak

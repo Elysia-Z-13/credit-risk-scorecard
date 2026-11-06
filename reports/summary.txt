@@ -1,0 +1,19 @@
+=== 关键数字（回填 README / 报告 / 简历）===
+
+[模型对比]
+  Logistic                 AUC_train=0.7709 AUC_test=0.7693 KS=0.4078 gap=0.0016
+  GBM                      AUC_train=0.7984 AUC_test=0.7814 KS=0.4256 gap=0.0171
+  Logistic(no late_cur)    AUC_train=0.7616 AUC_test=0.7574 KS=0.4050 gap=0.0042
+  GBM(no late_cur)         AUC_train=0.7905 AUC_test=0.7683 KS=0.4192 gap=0.0221
+
+[Top IV]
+  late_cur           IV=0.8744
+  max_late           IV=0.7598
+  late_cnt           IV=0.6871
+  pay_avg            IV=0.1850
+  limit_bal          IV=0.1724
+  repay_ratio_cur    IV=0.1387
+
+[策略]
+  基准：通过率 100.0%  坏账率 22.01%
+  建议：阈值 0.28  通过率 77.4%  坏账率 13.10%

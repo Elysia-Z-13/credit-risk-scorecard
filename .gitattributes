@@ -1,0 +1,8 @@
+# 统一换行符，避免 Windows / Linux 之间产生无意义的 diff
+* text=auto
+
+# 二进制文件不做换行转换
+*.png binary
+*.jpg binary
+*.parquet binary
+*.xlsx binary

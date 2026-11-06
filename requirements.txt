@@ -1,0 +1,10 @@
+duckdb>=1.0.0
+pandas>=2.0.0
+numpy>=1.26.0
+scikit-learn>=1.4.0
+matplotlib>=3.8.0
+
+# 说明：
+# - 不需要 pyarrow（parquet 读写统一走 duckdb）
+# - 不需要 seaborn（图表用 matplotlib 直出）
+# - 环境已建好在 .venv，直接用 .venv\Scripts\python.exe 运行
